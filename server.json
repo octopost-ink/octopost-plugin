@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "ink.octopost/octopost",
+  "title": "Octopost",
+  "description": "AI agents post to X with an approval queue. Threads after Meta approval; others in testing.",
+  "version": "1.0.1",
+  "websiteUrl": "https://octopost.ink/docs/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://octopost.ink/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer followed by your Octopost API key (op_...), from Dashboard > API keys",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

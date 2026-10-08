@@ -1,0 +1,24 @@
+{
+  "name": "octopost",
+  "displayName": "Octopost",
+  "version": "1.0.0",
+  "description": "Post, schedule, queue and thread posts to X from your agent, with an approval queue for posts a person should check first. Threads after Meta approval; Bluesky, LinkedIn and Mastodon in testing.",
+  "author": {
+    "name": "Great Work LLC",
+    "email": "hello@greatwork.company",
+    "url": "https://octopost.ink"
+  },
+  "homepage": "https://octopost.ink",
+  "repository": "https://github.com/octopost-ink/octopost-plugin",
+  "license": "MIT",
+  "keywords": ["social media", "twitter", "x", "scheduling", "threads", "approval queue", "mcp"],
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Octopost API key",
+      "description": "Starts with op_. Create one at octopost.ink/dashboard/api-keys.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

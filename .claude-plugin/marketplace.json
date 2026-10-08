@@ -1,0 +1,17 @@
+{
+  "name": "octopost",
+  "owner": {
+    "name": "Octopost",
+    "url": "https://octopost.ink"
+  },
+  "metadata": {
+    "description": "Post to X from your agent with an approval queue: Octopost MCP server plus an agent skill."
+  },
+  "plugins": [
+    {
+      "name": "octopost",
+      "source": "./",
+      "description": "Post, schedule, queue and thread posts to X, with an approval queue."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "octopost": {
+      "type": "http",
+      "url": "https://octopost.ink/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_key}"
+      }
+    }
+  }
+}
