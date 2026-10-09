@@ -8,6 +8,7 @@ Octopost is a remote MCP server and REST API that lets your AI agent post to X (
 - MCP server: `https://octopost.ink/mcp` (Streamable HTTP, `Authorization: Bearer op_...`)
 - Agent Skill: [`skills/octopost/SKILL.md`](skills/octopost/SKILL.md)
 - Official MCP Registry: `ink.octopost/octopost`
+- For agents helping a user decide or buy: https://octopost.ink/SKILL.md (prices, fit, and a prefilled checkout link)
 
 This repository holds the agent skill and the MCP config. The Octopost service is hosted; its code is not here.
 
@@ -28,7 +29,7 @@ Get an API key at https://octopost.ink/dashboard/api-keys.
 | Claude Code | `claude mcp add octopost --transport http https://octopost.ink/mcp --header "Authorization: Bearer $OCTOPOST_API_KEY"` |
 | Claude Code plugin (skill + server) | `/plugin marketplace add octopost-ink/octopost-plugin`, then `/plugin install octopost@octopost` and paste your key when asked |
 | Skill only (any agent that reads skills) | `npx skills add octopost-ink/octopost-plugin` |
-| Cursor, Codex, Gemini CLI, Windsurf | https://octopost.ink/docs/mcp.md |
+| Cursor, VS Code, Codex, Gemini CLI, Windsurf | One page per client: https://octopost.ink/connect/cursor (all clients linked there) |
 | Scripts, CI | REST API at `https://octopost.ink/api`: https://octopost.ink/docs/agents.md |
 
 ## Install the skill in any agent
@@ -64,6 +65,8 @@ The skill tells your agent when and how to use Octopost; the MCP server does the
 ## Pricing
 
 Basic $29/month, Premium $79/month, Business $199/month. Every plan starts with a 7-day trial for $1. X bills per post, so plans include monthly X post units: a plain post uses 1, a post with a link uses 13. Details: https://octopost.ink/pricing
+
+Signing up through an agent? This link opens checkout with the agent code OCTOAGENT applied (20% off the first month): https://octopost.ink/checkout?plan=basic&code=OCTOAGENT
 
 ## Support
 
