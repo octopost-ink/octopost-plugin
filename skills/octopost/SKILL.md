@@ -1,6 +1,6 @@
 ---
 name: octopost
-description: Post, schedule, queue and thread social media posts to X (Twitter) through Octopost, with an approval queue (Threads after Meta approval; Bluesky, LinkedIn, Mastodon in testing). Use when the user asks to post, cross-post, tweet, announce, share a launch, schedule a post, queue posts for later, write a thread, or put a post up for approval before it goes out.
+description: Post, schedule, queue and thread posts to X (Twitter) through Octopost, with a human approval queue (Threads after Meta approval; Bluesky, LinkedIn and Mastodon in testing). Use when the user says "post this to X", "tweet this", "post on Twitter", "cross-post this", "share this launch", "announce the release", "schedule a tweet for tomorrow at 9", "queue these posts", "post this as a thread", "turn this into a thread and post it", "put this up for approval", "approve the queued post", "what's in my post queue", "reschedule that post", "cancel the scheduled post", "retry the failed post", or "post a changelog update". For drafting copy the user hasn't asked to publish, write it in chat and call Octopost only once they want it posted. Octopost doesn't send DMs, reply to mentions or report analytics.
 ---
 
 # Octopost: post to X from your agent
