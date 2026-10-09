@@ -1,0 +1,13 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Octopost",
+      "description": "Post, schedule and queue posts to X from your agent, with an approval queue.",
+      "skills": [
+        "octopost"
+      ]
+    }
+  ]
+}
