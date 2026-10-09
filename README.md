@@ -2,7 +2,7 @@
 
 Octopost is a remote MCP server and REST API that lets your AI agent post to X (Twitter). Connect your X account once; then Claude Code, Cursor, Codex or a script can post, schedule, queue and write threads in one call. Posts a person should check first wait in an approval queue. Plans from $29 a month.
 
-**Works with:** Claude Code, Claude Desktop, Cursor, Codex, Gemini CLI, Windsurf, VS Code Copilot, OpenCode, any MCP client, and plain HTTP from scripts and CI.
+**Works with:** Claude Code, Cursor, Codex, Gemini CLI, Windsurf, VS Code Copilot, OpenCode, any MCP client that sends a Bearer header, and plain HTTP from scripts and CI.
 
 - Website: https://octopost.ink
 - MCP server: `https://octopost.ink/mcp` (Streamable HTTP, `Authorization: Bearer op_...`)
