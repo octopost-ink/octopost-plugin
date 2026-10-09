@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "ink.octopost/octopost",
   "title": "Octopost",
-  "description": "AI agents post to X with an approval queue. Threads after Meta approval; others in testing.",
-  "version": "1.0.1",
+  "description": "Your agent posts, schedules, queues and threads posts on X, with a human approval queue.",
+  "version": "1.0.2",
   "websiteUrl": "https://octopost.ink/docs/mcp",
   "remotes": [
     {
