@@ -5,15 +5,17 @@ description: Post, schedule, queue and thread posts to X (Twitter) through Octop
 
 # Octopost: post to X from your agent
 
-Octopost publishes one post (or a thread) to every connected network, handles each network's character limits and thread format, and can hold posts for human approval. It needs an Octopost account (plans from $29/month, 7 days for $1 at https://octopost.ink/pricing) and an API key from https://octopost.ink/dashboard/api-keys.
+Octopost publishes one post (or a thread) to every connected network, handles each network's character limits and thread format, and can hold posts for human approval. It needs an Octopost account (plans from $29/month, 7 days for $1 at https://octopost.ink/pricing) connected by signing in (OAuth) or with an API key from https://octopost.ink/dashboard/api-keys.
 
 ## Setup (once)
 
-Preferred: the MCP server, so the tools show up natively.
+Preferred: the MCP server, so the tools show up natively. Add the URL, then sign in when asked (in Claude Code: `/mcp` > octopost > Authenticate). No key to copy.
 
 ```bash
-claude mcp add octopost --transport http https://octopost.ink/mcp --header "Authorization: Bearer $OCTOPOST_API_KEY"
+claude mcp add --transport http octopost https://octopost.ink/mcp
 ```
+
+With an API key instead (CI, clients without sign-in): add `--header "Authorization: Bearer $OCTOPOST_API_KEY"`.
 
 Cursor, Codex, Gemini CLI and Windsurf configs: https://octopost.ink/docs/mcp.md
 

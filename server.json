@@ -3,7 +3,7 @@
   "name": "ink.octopost/octopost",
   "title": "Octopost",
   "description": "Your agent posts, schedules, queues and threads posts on X, with a human approval queue.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "websiteUrl": "https://octopost.ink/docs/mcp",
   "remotes": [
     {
@@ -12,8 +12,8 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer followed by your Octopost API key (op_...), from Dashboard > API keys",
-          "isRequired": true,
+          "description": "Optional. Clients that support MCP authorization sign in with OAuth and need no header. Otherwise: Bearer followed by your Octopost API key (op_...), from Dashboard > API keys",
+          "isRequired": false,
           "isSecret": true
         }
       ]
