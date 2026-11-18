@@ -29,7 +29,8 @@ Most clients just need the URL: they open an Octopost sign-in page the first tim
 | Claude Code | `claude mcp add --transport http octopost https://octopost.ink/mcp`, then `/mcp` > octopost > Authenticate |
 | Claude Code plugin (skill + server) | `/plugin marketplace add octopost-ink/octopost-plugin`, then `/plugin install octopost@octopost`, then `/mcp` > octopost > Authenticate |
 | Claude Code with an API key | `claude mcp add octopost --transport http https://octopost.ink/mcp --header "Authorization: Bearer $OCTOPOST_API_KEY"` |
-| claude.ai, Claude Desktop, ChatGPT | Add a custom connector with the URL `https://octopost.ink/mcp` and sign in |
+| ChatGPT | Install the [Octopost plugin](https://chatgpt.com/plugins/plugin_asdk_app_6af0a1fb6c148191bfe580c3cf1c7277) from ChatGPT's plugin directory and sign in |
+| claude.ai, Claude Desktop | Add a custom connector with the URL `https://octopost.ink/mcp` and sign in |
 | Skill only (any agent that reads skills) | `npx skills add octopost-ink/octopost-plugin` |
 | Cursor, VS Code, Codex, Gemini CLI, Windsurf | One page per client: https://octopost.ink/connect/cursor (all clients linked there) |
 | Scripts, CI | REST API at `https://octopost.ink/api`: https://octopost.ink/docs/agents.md |
