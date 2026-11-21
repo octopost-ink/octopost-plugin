@@ -1,6 +1,6 @@
 # Octopost
 
-Octopost is a remote MCP server and REST API that lets your AI agent post to X (Twitter). Connect your X account once; then Claude Code, Cursor, Codex or a script can post, schedule, queue and write threads in one call. Posts a person should check first wait in an approval queue. Plans from $29 a month.
+Octopost is a remote MCP server and REST API that lets your AI agent post to X (Twitter), Bluesky, Mastodon and LinkedIn. Connect your accounts once; then Claude Code, Cursor, Codex or a script can post, schedule, queue and write threads in one call. Posts a person should check first wait in an approval queue. Plans from $29 a month.
 
 **Works with:** Claude Code, claude.ai, ChatGPT, Cursor, Codex, Gemini CLI, Windsurf, VS Code Copilot, OpenCode, any MCP client (sign in with OAuth, or send a Bearer API key), and plain HTTP from scripts and CI.
 
@@ -16,9 +16,10 @@ This repository holds the agent skill and the MCP config. The Octopost service i
 
 | Network | Status |
 |---|---|
-| X (Twitter) | Live |
+| X (Twitter), Bluesky, Mastodon | Live |
+| LinkedIn | Live (personal profiles) |
 | Threads | Works; opens to customers after Meta approves the Octopost app |
-| Bluesky, LinkedIn, Mastodon | In testing |
+| Instagram, Facebook, TikTok, YouTube, Pinterest, Reddit | In platform review, not available yet |
 
 ## Install
 
@@ -32,6 +33,7 @@ Most clients just need the URL: they open an Octopost sign-in page the first tim
 | ChatGPT | Install the [Octopost plugin](https://chatgpt.com/plugins/plugin_asdk_app_6af0a1fb6c148191bfe580c3cf1c7277) from ChatGPT's plugin directory and sign in |
 | claude.ai, Claude Desktop | Add a custom connector with the URL `https://octopost.ink/mcp` and sign in |
 | Skill only (any agent that reads skills) | `npx skills add octopost-ink/octopost-plugin` |
+| Cline | Steps in [`llms-install.md`](llms-install.md) |
 | Cursor, VS Code, Codex, Gemini CLI, Windsurf | One page per client: https://octopost.ink/connect/cursor (all clients linked there) |
 | Scripts, CI | REST API at `https://octopost.ink/api`: https://octopost.ink/docs/agents.md |
 
